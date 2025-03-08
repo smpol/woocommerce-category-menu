@@ -12,11 +12,9 @@
  */
 
 if (!defined('ABSPATH')) {
-    exit; // Blokuj bezpośredni dostęp
+    exit;
 }
 
-// Załaduj pliki wtyczki
 require_once plugin_dir_path(__FILE__) . 'includes/class-init.php';
 
-// Uruchomienie wtyczki
 WooCommerce_Category_Menu_Init::init();
